@@ -60,6 +60,9 @@ out/
 # Windows specific
 Thumbs.db
 
+# Claude Code specific
+.claude/
+
 # Python specific
 __pycache__/
 *.py[cod]
