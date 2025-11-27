@@ -59,3 +59,18 @@ out/
 
 # Windows specific
 Thumbs.db
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.pytest_cache/
+
+# MATLAB specific
+*.asv
+*.m~
+slprj/
