@@ -1,5 +1,4 @@
 """
-********************************** PORTAL Fitness Function **********************************
 Author: Delaram Yazdani, Danial Yazdani, Mai Peng
 Email: delaram.yazdani@yahoo.com
        danial.yazdani@gmail.com
@@ -16,7 +15,6 @@ Inputs:
 
 Output:
     f: Fitness value (scalar)
-************************************************************************************************
 """
 
 import numpy as np

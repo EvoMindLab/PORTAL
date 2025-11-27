@@ -1,5 +1,4 @@
 """
-********************************** PORTAL Save Instance Function **********************************
 Author: Delaram Yazdani, Danial Yazdani, Mai Peng
 Email: delaram.yazdani@yahoo.com
        danial.yazdani@gmail.com
@@ -18,7 +17,6 @@ Inputs:
 
 Output:
     filepath: Full path to the saved file
-************************************************************************************************
 """
 
 import json

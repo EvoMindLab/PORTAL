@@ -1,24 +1,22 @@
-# PORTAL: Parameterized Optimization Test Arena Library
+# PORTAL:  Platform for Optimization Research, Testing, Analysis, and Learning
 
-> A Flexible Benchmark Suite for Continuous Optimization Research
+> A Controllable Landscape Generator for Continuous Optimization
 
-**Git repository:** [https://github.com/your-org/PORTAL](https://github.com/your-org/PORTAL)
+**Git repository:** [EvoMindLab/PORTAL](https://github.com/EvoMindLab/PORTAL)
 
 **The current version is `v1.0`**
 
 ## Author List
 
-* **DELARAM YAZDANI**, delaram.yazdani@yahoo.com, Liverpool Logistics, Offshore and Marine (LOOM) Research Institute, Faculty of Engineering and Technology, Liverpool John Moores University, United Kingdom, L2 2ER;
-
 * **DANIAL YAZDANI**, danial.yazdani@gmail.com, School of Computing Technologies, RMIT University, Melbourne, Australia, 3000;
-
 * **MAI PENG**, pengmai1998@gmail.com, School of Automation, China University of Geosciences, Wuhan, Hubei Key Laboratory of Advanced Control and Intelligent Automation for Complex Systems, and Engineering Research Center of Intelligent Technology for Geo-Exploration, Ministry of Education, China, 430074;
+* **DELARAM YAZDANI**, delaram.yazdani@yahoo.com, Liverpool Logistics, Offshore and Marine (LOOM) Research Institute, Faculty of Engineering and Technology, Liverpool John Moores University, United Kingdom, L2 2ER;
 
 ## Get Started
 
 ```bash
 # Clone the project
-git clone https://github.com/your-org/PORTAL
+git clone https://github.com/EvoMindLab/PORTAL
 cd PORTAL
 ```
 
@@ -118,34 +116,38 @@ python Evaluator_Python_Script.py
 
 ### Core Parameters
 
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| **Dimension** | 2 | Problem dimensionality |
-| **NumComponents** | 1 | Number of component functions |
-| **Seed** | current time | Random seed for reproducibility |
-| **BoundsMin** | -100 | Lower bound of search space |
-| **BoundsMax** | 100 | Upper bound of search space |
+| Parameter               | Default      | Description                     |
+| ----------------------- | ------------ | ------------------------------- |
+| **Dimension**     | 2            | Problem dimensionality          |
+| **NumComponents** | 1            | Number of component functions   |
+| **Seed**          | current time | Random seed for reproducibility |
+| **BoundsMin**     | -100         | Lower bound of search space     |
+| **BoundsMax**     | 100          | Upper bound of search space     |
 
 ### Transformation Modes
 
 #### **BaselineMode** (Baseline Function Selection)
+
 - **Mode 1** (default): Random 50-50 - Each component has 50% probability of Form A or Form B
 - **Mode 2**: Custom probability - Use `BaselineProbA` to control probability of Form A
 - **Mode 3**: All same - All components use same baseline (use `BaselineType`: 'A' or 'B')
 - **Mode 4**: User-specified - Use `BaselineSeq` cell array with custom sequence
 
 #### **TransformMode** (Transformation Sequence Generation)
+
 - **Mode 1** (default): Fully random - Random count per component in [`TransformCountMin`, `TransformCountMax`], random transformations
 - **Mode 2**: Fixed count - Each component has `TransformCount` random transformations
 - **Mode 3**: No transformations - All components have empty transformation sequences
 - **Mode 4**: User-specified - Use `TransformSeq` cell array (backward compatible)
 
 **Related Parameters:**
+
 - `TransformCountMin` (default: 0) - Minimum transform count for Mode 1
 - `TransformCountMax` (default: 2) - Maximum transform count for Mode 1
 - `TransformCount` (default: 1) - Fixed transform count for Mode 2
 
 #### **TransformParamMode** (Transformation Parameter Distribution)
+
 - **Mode 1** (default): Independent random - Each (k,i) parameter sampled independently (K×d matrix)
 - **Mode 2**: Component-shared - All components share same pattern across dimensions (1×d replicated)
 - **Mode 3**: Dimension-shared - All dimensions share same value per component (K×1 replicated)
@@ -156,11 +158,13 @@ python Evaluator_Python_Script.py
 ### Landscape Configuration Modes
 
 #### **CenterMode** (Component Center Distribution)
+
 - **Mode 1** (default): Uniform random - Centers distributed uniformly in allowed range
 - **Mode 2**: Exclusion zone - Centers avoid specified region (use `ExclusionZone`)
 - **Mode 3**: Shared center - All components overlap at same center
 
 #### **KappaMode** (Scaling Factor Distribution)
+
 - **Mode 1** (default): Independent random - Each scaling factor sampled independently
 - **Mode 2**: Beta distribution - Creates extreme condition numbers (use `BetaAlpha`, `BetaBeta`)
 - **Mode 3**: Component-shared - Isotropic scaling within each component
@@ -168,6 +172,7 @@ python Evaluator_Python_Script.py
 - **Mode 5**: Isotropic (all directions) - Same scaling factor used in all directions
 
 #### **PMode** (Exponent Distribution)
+
 - **Mode 1** (default): Random range - Uniformly random exponents
 - **Mode 2**: Fixed value - All exponents set to `FixedP`
 - **Mode 3**: Gradient - Linearly varying from `p_min` to `p_max`
@@ -175,11 +180,13 @@ python Evaluator_Python_Script.py
 - **Mode 5**: Linear distribution - Linearly spaced values with random permutation per component (Form A only)
 
 **Related Parameters:**
+
 - `FixedP` (default: 2.0) - Fixed exponent value for Mode 2
 - `p_min` (default: 0.5) - Minimum exponent for Mode 1 and Mode 3
 - `p_max` (default: 2.5) - Maximum exponent for Mode 1 and Mode 3
 
 #### **BetaOffsetMode** (Offset Value Distribution)
+
 - **Mode 1** (default): Independent random - Each component has independent offset
 - **Mode 2**: Shared value - All components share same random offset
 - **Mode 3**: Fixed value - All components use `FixedBeta`
@@ -187,11 +194,13 @@ python Evaluator_Python_Script.py
 - **Mode 5**: Linear distribution - Linearly spaced values with random permutation across components
 
 **Related Parameters:**
+
 - `FixedBeta` (default: 0) - Fixed offset value for Mode 3
 - `beta_min` (default: -100) - Minimum offset
 - `beta_max` (default: 100) - Maximum offset
 
 #### **RotationMode** (Variable Interaction Pattern)
+
 - **Mode 1** (default): No rotation - Separable problem (identity matrix)
 - **Mode 2**: Fully connected - All variable pairs interact
 - **Mode 3**: Probabilistic - Sparse interactions (use `RotationProb`)
@@ -201,6 +210,7 @@ python Evaluator_Python_Script.py
 - **Mode 7**: Block-diagonal - Partially separable groups (use `BlockSizes`, `BlockAngles`)
 
 **Related Parameters:**
+
 - `RotationProb` (default: 0.5) - Probability of interaction for Mode 3
 - `SpecificAngle` (default: 45) - Fixed angle in degrees for Mode 5
 - `BlockSizes` - Array of block sizes for Mode 7
@@ -310,6 +320,7 @@ DE_config = {
 ### Output
 
 The evaluator provides:
+
 - Per-run statistics (best value, error, acceptance point)
 - Summary statistics (mean/std error, acceptance ratio)
 - Convergence plot showing average error over function evaluations
@@ -340,10 +351,12 @@ PORTAL instances are saved in a structured JSON format that includes all paramet
 ## System Requirements
 
 ### MATLAB
+
 - **MATLAB R2016b+** for core functionality
 - **MATLAB R2020a+** recommended for best compatibility
 
 ### Python
+
 - **Python 3.7+**
 - Required packages:
   ```bash
@@ -354,24 +367,12 @@ PORTAL instances are saved in a structured JSON format that includes all paramet
 
 This program is to be used under the terms of the [GNU General Public License](http://www.gnu.org/copyleft/gpl.html)
 
-Copyright (c) 2025-present **Delaram Yazdani, Danial Yazdani, Mai Peng**
+Copyright (c) 2025-present **Danial Yazdani, Mai Peng, Delaram Yazdani**
 
 ## For More Information
 
 If you need assistance or have questions about PORTAL, please contact:
-- Delaram Yazdani: [delaram.yazdani@yahoo.com](mailto:delaram.yazdani@yahoo.com)
+
 - Danial Yazdani: [danial.yazdani@gmail.com](mailto:danial.yazdani@gmail.com)
 - Mai Peng: [pengmai1998@gmail.com](mailto:pengmai1998@gmail.com)
-
-## Citation
-
-If you use PORTAL in your research, please cite:
-
-```bibtex
-@software{portal2025,
-  title={PORTAL: Parameterized Optimization Test Arena Library},
-  author={Yazdani, Delaram and Yazdani, Danial and Peng, Mai},
-  year={2025},
-  url={https://github.com/your-org/PORTAL}
-}
-```
+- Delaram Yazdani: [delaram.yazdani@yahoo.com](mailto:delaram.yazdani@yahoo.com)

@@ -1,5 +1,4 @@
 """
-********************************** PORTAL Playground Function **********************************
 Author: Delaram Yazdani, Danial Yazdani, Mai Peng
 Email: delaram.yazdani@yahoo.com
        danial.yazdani@gmail.com
@@ -14,7 +13,6 @@ Inputs:
     portal_instance: PORTAL benchmark instance dictionary
     resolution: (optional) Grid resolution for plotting (default: 250)
     show_contour: (optional) Show contour lines on surface plot (default: True)
-************************************************************************************************
 """
 
 import numpy as np

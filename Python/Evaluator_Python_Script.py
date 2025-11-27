@@ -1,4 +1,9 @@
 """
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 Evaluator_Python_Script.py
 Load and evaluate PORTAL benchmark instances using a sample optimizer.
 
@@ -16,11 +21,6 @@ Usage:
   2. Optionally adjust optimizer parameters
   3. Run the script to evaluate or optimize the instance
 
-Author: Delaram Yazdani, Danial Yazdani, Mai Peng
-Email: delaram.yazdani@yahoo.com
-       danial.yazdani@gmail.com
-       pengmai1998@gmail.com
-Last Edited: 2025-11-28
 """
 
 import sys

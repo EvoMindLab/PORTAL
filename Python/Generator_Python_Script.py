@@ -1,5 +1,4 @@
 """
-********************************** PORTAL Benchmark Generator **********************************
 Author: Delaram Yazdani, Danial Yazdani, Mai Peng
 Email: delaram.yazdani@yahoo.com
        danial.yazdani@gmail.com
@@ -14,7 +13,6 @@ Description:
 License:
     This program is to be used under the terms of the GNU General Public License
     (http://www.gnu.org/copyleft/gpl.html).
-************************************************************************************************
 """
 
 import numpy as np

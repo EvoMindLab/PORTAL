@@ -1,5 +1,4 @@
 """
-********************************** PORTAL Load Instance Function **********************************
 Author: Delaram Yazdani, Danial Yazdani, Mai Peng
 Email: delaram.yazdani@yahoo.com
        danial.yazdani@gmail.com
@@ -15,7 +14,6 @@ Inputs:
 
 Output:
     portal_instance: PORTAL benchmark instance dictionary
-************************************************************************************************
 """
 
 import json

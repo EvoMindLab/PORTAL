@@ -1,6 +1,9 @@
-%********************************** PORTAL Save Instance Function **********************************
-%Author: Generated for PORTAL Framework
-%Last Edited: 2025-10-10
+%********************************** PORTAL Fitness Function **********************************
+% Author: Mai Peng, Danial Yazdani, Delaram Yazdani
+% Email: pengmai1998@gmail.com
+%        danial.yazdani@gmail.com
+%        delaram.yazdani@yahoo.com
+% Last Edited: 2025-11-28
 %Title: Save PORTAL Instance to JSON
 % --------
 % Description:

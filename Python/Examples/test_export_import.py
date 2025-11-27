@@ -1,12 +1,12 @@
 """
-Batch Test Script for JSON Export/Import Validation
-Creates 20 diverse PORTAL instances and verifies export/import consistency
-
 Author: Delaram Yazdani, Danial Yazdani, Mai Peng
 Email: delaram.yazdani@yahoo.com
        danial.yazdani@gmail.com
        pengmai1998@gmail.com
 Last Edited: 2025-11-28
+
+Batch Test Script for JSON Export/Import Validation
+Creates 20 diverse PORTAL instances and verifies export/import consistency
 """
 
 import sys

@@ -31,7 +31,7 @@ addpath(genpath(script_path));
 
 %% Configuration
 % Instance file to evaluate (change this to your JSON file)
-instance_file = 'Instances/test2.json';  % Example: 'Instances/my_benchmark.json'
+instance_file = 'Instances/test_batch_1.json';  % Example: 'Instances/my_benchmark.json'
 
 % Number of independent runs
 RUNS = 5;

@@ -1,5 +1,4 @@
 """
-********************************** PORTAL Default Settings **********************************
 Author: Delaram Yazdani, Danial Yazdani, Mai Peng
 Email: delaram.yazdani@yahoo.com
        danial.yazdani@gmail.com
@@ -19,7 +18,6 @@ Usage:
 License:
     This program is to be used under the terms of the GNU General Public License
     (http://www.gnu.org/copyleft/gpl.html).
-************************************************************************************************
 """
 
 from typing import Dict, Any
