@@ -12,7 +12,7 @@
 %   PORTAL - PORTAL benchmark instance structure
 %************************************************************************************************
 
-function PORTAL = loadInstance(filename)
+function PORTAL = load_instance(filename)
     %% Determine file path
     if ~exist(filename, 'file')
         % Try in Instances directory
@@ -82,7 +82,7 @@ function PORTAL = loadInstance(filename)
                 for k = 1:K
                     Psi_deg_temp(:,:,k) = squeeze(Psi_deg_cell(k,:,:));
                 end
-            % Case 1: 3D array [d×d×K] (expected from saveInstance) - only if K≠d
+            % Case 1: 3D array [d×d×K] (expected from save_instance) - only if K≠d
             elseif Psi_ndims == 3 && Psi_size(1) == d && Psi_size(2) == d && Psi_size(3) == K && K ~= d
                 Psi_deg_temp = Psi_deg_cell;
             % Case 3: 2D array when K=1 [d×d]

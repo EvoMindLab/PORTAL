@@ -12,7 +12,7 @@
 %   show_contour - (optional) Show contour lines on surface plot (default: true)
 %************************************************************************************************
 
-function plotLandscape(PORTAL, resolution, show_contour)
+function Playground_MATLAB_Script(PORTAL, resolution, show_contour)
     %% Parse input arguments
     if nargin < 2
         resolution = 250;

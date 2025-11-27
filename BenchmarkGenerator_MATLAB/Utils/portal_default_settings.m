@@ -8,16 +8,16 @@
 %   Supports different difficulty levels and testing scenarios
 % --------
 % Usage:
-%   config = PortalDefaultSettings('easy');
-%   PORTAL = BenchmarkGenerator(config{:});
+%   config = portal_default_settings('easy');
+%   PORTAL = Generator_MATLAB_Script(config{:});
 % --------
 % License:
 %   This program is to be used under the terms of the GNU General Public License
 %   (http://www.gnu.org/copyleft/gpl.html).
 %************************************************************************************************
 
-function config = PortalDefaultSettings(preset)
-%PORTALDEFAULTSETTINGS Returns configuration cell array for BenchmarkGenerator
+function config = portal_default_settings(preset)
+%PORTAL_DEFAULT_SETTINGS Returns configuration cell array for Generator_MATLAB_Script
 %
 %   Available presets:
 %       'standard'        - Default behavior (mode=1 for all parameters)

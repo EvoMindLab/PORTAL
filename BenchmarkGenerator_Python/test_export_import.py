@@ -7,7 +7,7 @@ Creates 20 diverse PORTAL instances and verifies export/import consistency
 import numpy as np
 import os
 import sys
-from benchmark_generator import benchmark_generator
+from Generator_Python_Script import benchmark_generator
 from save_instance import save_instance
 from load_instance import load_instance
 from fitness import fitness

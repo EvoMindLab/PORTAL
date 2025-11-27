@@ -15,11 +15,11 @@ License:
 """
 
 import numpy as np
-from benchmark_generator import benchmark_generator
+from Generator_Python_Script import benchmark_generator
 from fitness import fitness
 from save_instance import save_instance
 from load_instance import load_instance
-from plot_landscape import ask_and_plot
+from Playground_Python_Script import ask_and_plot
 from portal_default_settings import portal_default_settings
 
 

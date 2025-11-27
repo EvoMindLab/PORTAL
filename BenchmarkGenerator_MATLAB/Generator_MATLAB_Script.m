@@ -12,7 +12,15 @@
 %   (http://www.gnu.org/copyleft/gpl.html).
 %************************************************************************************************
 
-function [PORTAL] = BenchmarkGenerator(varargin)
+function [PORTAL] = Generator_MATLAB_Script(varargin)
+%% Auto-include all subdirectories
+persistent paths_added;
+if isempty(paths_added)
+    script_path = fileparts(mfilename('fullpath'));
+    addpath(genpath(script_path));
+    paths_added = true;
+end
+
 %% Parse input arguments
 p = inputParser;
 addParameter(p, 'Seed', round(posixtime(datetime('now'))), @isnumeric);

@@ -13,7 +13,7 @@
 %   filepath - Full path to the saved file
 %************************************************************************************************
 
-function filepath = saveInstance(PORTAL, filename)
+function filepath = save_instance(PORTAL, filename)
     %% Determine filename
     if nargin < 2 || isempty(filename)
         filename = sprintf('PORTAL_d%d_K%d_seed%d.json', PORTAL.d, PORTAL.K, PORTAL.Seed);
