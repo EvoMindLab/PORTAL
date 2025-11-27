@@ -1,7 +1,10 @@
 """
-PORTAL Fitness Function
-Author: Python Port of PORTAL Framework
-Last Edited: 2025-19-10
+********************************** PORTAL Fitness Function **********************************
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 Title: PORTAL Fitness Evaluation
 
 Description:
@@ -13,6 +16,7 @@ Inputs:
 
 Output:
     f: Fitness value (scalar)
+************************************************************************************************
 """
 
 import numpy as np

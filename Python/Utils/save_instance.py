@@ -1,7 +1,10 @@
 """
-PORTAL Save Instance Function
-Author: Python Port of PORTAL Framework
-Last Edited: 2025-19-10
+********************************** PORTAL Save Instance Function **********************************
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 Title: Save PORTAL Instance to JSON
 
 Description:
@@ -15,6 +18,7 @@ Inputs:
 
 Output:
     filepath: Full path to the saved file
+************************************************************************************************
 """
 
 import json

@@ -17,7 +17,8 @@ function PORTAL = load_instance(filename)
     if ~exist(filename, 'file')
         % Try in Instances directory
         script_dir = fileparts(mfilename('fullpath'));
-        instances_dir = fullfile(script_dir, 'Instances');
+        parent_dir = fileparts(script_dir); 
+        instances_dir = fullfile(parent_dir, 'Instances');
         filepath = fullfile(instances_dir, filename);
 
         if ~exist(filepath, 'file')

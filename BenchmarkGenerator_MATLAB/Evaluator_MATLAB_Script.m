@@ -1,22 +1,27 @@
-% Evaluator_MATLAB_Script.m
-% Load and evaluate PORTAL benchmark instances using a sample optimizer.
-%
-% This script demonstrates how to:
-%   - Load PORTAL benchmark instances from JSON files
-%   - Evaluate candidate solutions using the PORTAL fitness function
-%   - Apply a sample optimizer (Differential Evolution) for demonstration
-%
+%********************************** PORTAL Evaluator Script **********************************
+% Author: Mai Peng, Danial Yazdani, Delaram Yazdani
+% Email: pengmai1998@gmail.com
+%        danial.yazdani@gmail.com
+%        delaram.yazdani@yahoo.com
+% Last Edited: 2025-11-28
+% Title: PORTAL Instance Evaluator with Sample Optimizer
+% --------
+% Description:
+%   Load and evaluate PORTAL benchmark instances using a sample optimizer.
+%   This script demonstrates how to:
+%     - Load PORTAL benchmark instances from JSON files
+%     - Evaluate candidate solutions using the PORTAL fitness function
+%     - Apply a sample optimizer (Differential Evolution) for demonstration
+% --------
 % Notes:
 %   - You can replace the sample DE implementation with any custom optimizer
 %   - The script is intended as a template for benchmarking experiments
-%
+% --------
 % Usage:
 %   1. Set the instance_file variable to your JSON instance path
 %   2. Optionally adjust optimizer parameters
 %   3. Run the script to evaluate or optimize the instance
-%
-% Author: Generated for PORTAL Framework
-% Date: January 2025
+%************************************************************************************************
 
 clear; close all; clc;
 
@@ -26,7 +31,7 @@ addpath(genpath(script_path));
 
 %% Configuration
 % Instance file to evaluate (change this to your JSON file)
-instance_file = 'Instances/test_batch_1.json';  % Example: 'Instances/my_benchmark.json'
+instance_file = 'Instances/test2.json';  % Example: 'Instances/my_benchmark.json'
 
 % Number of independent runs
 RUNS = 5;

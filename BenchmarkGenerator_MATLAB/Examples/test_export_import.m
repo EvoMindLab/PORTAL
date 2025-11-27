@@ -1,5 +1,14 @@
-%% Batch Test Script for JSON Export/Import Validation
-% Creates 20 diverse PORTAL instances and verifies export/import consistency
+%********************************** PORTAL Export/Import Validation Test Suite **********************************
+% Author: Mai Peng, Danial Yazdani, Delaram Yazdani
+% Email: pengmai1998@gmail.com
+%        danial.yazdani@gmail.com
+%        delaram.yazdani@yahoo.com
+% Last Edited: 2025-11-28
+% Title: Batch Test Script for JSON Export/Import Validation
+% --------
+% Description:
+%   Creates 20 diverse PORTAL instances and verifies export/import consistency
+%************************************************************************************************
 clc; clear;
 
 fprintf('===============================================\n');

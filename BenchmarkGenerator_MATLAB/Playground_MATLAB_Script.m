@@ -1,7 +1,10 @@
-%********************************** PORTAL Plotting Function **********************************
-%Author: Generated for PORTAL Framework
-%Last Edited: 2025-10-10
-%Title: PORTAL Landscape Visualization
+%********************************** PORTAL Playground Function **********************************
+% Author: Mai Peng, Danial Yazdani, Delaram Yazdani
+% Email: pengmai1998@gmail.com
+%        danial.yazdani@gmail.com
+%        delaram.yazdani@yahoo.com
+% Last Edited: 2025-10-10
+% Title: PORTAL Landscape Visualization
 % --------
 % Description:
 %   Visualizes the PORTAL benchmark landscape with surface, contour, and combined plots

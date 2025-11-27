@@ -27,7 +27,8 @@ function filepath = save_instance(PORTAL, filename)
 
     %% Determine save path
     script_dir = fileparts(mfilename('fullpath'));
-    instances_dir = fullfile(script_dir, 'Instances');
+    parent_dir = fileparts(script_dir); 
+    instances_dir = fullfile(parent_dir, 'Instances');
 
     % Create Instances directory if it doesn't exist
     if ~exist(instances_dir, 'dir')

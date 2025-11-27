@@ -1,7 +1,10 @@
 """
 PORTAL Comprehensive Test Suite
-Author: Python Port of PORTAL Framework
-Last Edited: 2025-19-10
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 Title: PORTAL Complete Parameter Mode Testing with Interactive Plotting
 
 Description:
@@ -14,13 +17,17 @@ License:
     (http://www.gnu.org/copyleft/gpl.html).
 """
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import numpy as np
 from Generator_Python_Script import benchmark_generator
-from fitness import fitness
-from save_instance import save_instance
-from load_instance import load_instance
+from Utils.fitness import fitness
+from Utils.save_instance import save_instance
+from Utils.load_instance import load_instance
 from Playground_Python_Script import ask_and_plot
-from portal_default_settings import portal_default_settings
+from Utils.portal_default_settings import portal_default_settings
 
 
 def run_test_suite():

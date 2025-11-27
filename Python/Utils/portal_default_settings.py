@@ -1,7 +1,10 @@
 """
-PORTAL Default Settings
-Author: Python Port of PORTAL Framework
-Last Edited: 2025-19-10
+********************************** PORTAL Default Settings **********************************
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 Title: Centralized Configuration Management for PORTAL Benchmarks
 
 Description:
@@ -16,6 +19,7 @@ Usage:
 License:
     This program is to be used under the terms of the GNU General Public License
     (http://www.gnu.org/copyleft/gpl.html).
+************************************************************************************************
 """
 
 from typing import Dict, Any

@@ -1,7 +1,10 @@
 """
-PORTAL Plotting Function
-Author: Python Port of PORTAL Framework
-Last Edited: 2025-19-10
+********************************** PORTAL Playground Function **********************************
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 Title: PORTAL Landscape Visualization
 
 Description:
@@ -11,6 +14,7 @@ Inputs:
     portal_instance: PORTAL benchmark instance dictionary
     resolution: (optional) Grid resolution for plotting (default: 250)
     show_contour: (optional) Show contour lines on surface plot (default: True)
+************************************************************************************************
 """
 
 import numpy as np
@@ -18,7 +22,7 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
 from typing import Dict, Any, Optional
-from fitness import fitness
+from Utils.fitness import fitness
 
 
 def plot_landscape(portal_instance: Dict[str, Any], 

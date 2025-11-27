@@ -1,7 +1,10 @@
 %********************************** PORTAL Default Settings **********************************
-%Author: Generated for PORTAL Framework
-%Last Edited: 2025-10-10
-%Title: Centralized Configuration Management for PORTAL Benchmarks
+% Author: Mai Peng, Danial Yazdani, Delaram Yazdani
+% Email: pengmai1998@gmail.com
+%        danial.yazdani@gmail.com
+%        delaram.yazdani@yahoo.com
+% Last Edited: 2025-11-28
+% Title: Centralized Configuration Management for PORTAL Benchmarks
 % --------
 % Description:
 %   Provides predefined configuration presets for PORTAL benchmark generation

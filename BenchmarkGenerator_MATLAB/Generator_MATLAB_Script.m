@@ -1,7 +1,10 @@
 %********************************** PORTAL Benchmark Generator **********************************
-%Author: Generated for PORTAL Framework
-%Last Edited: 2025-10-10
-%Title: PORTAL Benchmark Instance Generator
+% Author: Mai Peng, Danial Yazdani, Delaram Yazdani
+% Email: pengmai1998@gmail.com
+%        danial.yazdani@gmail.com
+%        delaram.yazdani@yahoo.com
+% Last Edited: 2025-11-28
+% Title: PORTAL Benchmark Instance Generator
 % --------
 % Description:
 %   Generates random instances of PORTAL benchmark with configurable parameters
@@ -31,7 +34,7 @@ addParameter(p, 'NumComponents', 1, @isnumeric);
 addParameter(p, 'TransformMode', 1, @isnumeric);     % 1-4: transformation generation mode (default: Fully random)
 addParameter(p, 'TransformSeq', {{}}, @iscell);  % For TransformMode=4 (user-specified)
 addParameter(p, 'TransformCountMin', 0, @isnumeric); % For TransformMode=1 (random count)
-addParameter(p, 'TransformCountMax', 1, @isnumeric); % For TransformMode=1 (random count)
+addParameter(p, 'TransformCountMax', 2, @isnumeric); % For TransformMode=1 (random count)
 addParameter(p, 'TransformCount', 1, @isnumeric);    % For TransformMode=2 (fixed count), scalar or K-element array
 
 % Baseline Selection Mode

@@ -2,15 +2,22 @@
 Batch Test Script for JSON Export/Import Validation
 Creates 20 diverse PORTAL instances and verifies export/import consistency
 
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 """
 
-import numpy as np
-import os
 import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import numpy as np
 from Generator_Python_Script import benchmark_generator
-from save_instance import save_instance
-from load_instance import load_instance
-from fitness import fitness
+from Utils.save_instance import save_instance
+from Utils.load_instance import load_instance
+from Utils.fitness import fitness
 
 
 def test_export_import():

@@ -1,7 +1,10 @@
 %********************************** PORTAL Comprehensive Test Suite **********************************
-%Author: Generated for PORTAL Framework
-%Last Edited: 2025-10-11
-%Title: PORTAL Complete Parameter Mode Testing with Interactive Plotting
+% Author: Mai Peng, Danial Yazdani, Delaram Yazdani
+% Email: pengmai1998@gmail.com
+%        danial.yazdani@gmail.com
+%        delaram.yazdani@yahoo.com
+% Last Edited: 2025-11-28
+% Title: PORTAL Complete Parameter Mode Testing with Interactive Plotting
 % --------
 % Description:
 %   Tests ALL parameter generation modes with interactive 2D plotting

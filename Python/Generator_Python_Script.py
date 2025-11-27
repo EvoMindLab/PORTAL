@@ -1,7 +1,10 @@
 """
-PORTAL Benchmark Generator
-Author: Python Port of PORTAL Framework
-Last Edited: 2025-19-10
+********************************** PORTAL Benchmark Generator **********************************
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 Title: PORTAL Benchmark Instance Generator
 
 Description:
@@ -11,6 +14,7 @@ Description:
 License:
     This program is to be used under the terms of the GNU General Public License
     (http://www.gnu.org/copyleft/gpl.html).
+************************************************************************************************
 """
 
 import numpy as np

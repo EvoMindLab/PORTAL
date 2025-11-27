@@ -1,7 +1,10 @@
 """
-PORTAL Load Instance Function
-Author: Python Port of PORTAL Framework
-Last Edited: 2025-19-10
+********************************** PORTAL Load Instance Function **********************************
+Author: Delaram Yazdani, Danial Yazdani, Mai Peng
+Email: delaram.yazdani@yahoo.com
+       danial.yazdani@gmail.com
+       pengmai1998@gmail.com
+Last Edited: 2025-11-28
 Title: Load PORTAL Instance from JSON
 
 Description:
@@ -12,6 +15,7 @@ Inputs:
 
 Output:
     portal_instance: PORTAL benchmark instance dictionary
+************************************************************************************************
 """
 
 import json
