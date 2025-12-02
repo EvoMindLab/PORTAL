@@ -2,6 +2,8 @@
 
 > A Controllable Landscape Generator for Continuous Optimization
 
+**Reference Paper:** [http://arxiv.org/abs/2512.00288](http://arxiv.org/abs/2512.00288)
+
 **Git repository:** [EvoMindLab/PORTAL](https://github.com/EvoMindLab/PORTAL)
 
 **The current version is `v1.0`**
