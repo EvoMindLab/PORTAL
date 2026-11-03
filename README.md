@@ -284,9 +284,9 @@ reported experiments or the algorithms available in Studio.
 - **Benchmark recipe catalog:** Danial Yazdani and Shima F. Yazdi designed the
   benchmark recipes.
 
-For GUI questions, contact [Delaram Yazdani](mailto:delaram.yazdani@yahoo.com).
-For all other technical questions, contact
-[Danial Yazdani](mailto:danial.yazdani@gmail.com).
+For any issues, contact [Danial Yazdani](mailto:danial.yazdani@gmail.com),
+[Delaram Yazdani](mailto:delaram.yazdani@yahoo.com), or
+[Mai Peng](mailto:pengmai1998@gmail.com).
 
 Copyright (c) 2025-present Danial Yazdani, Delaram Yazdani, Mai Peng,
 and PORTAL contributors.
