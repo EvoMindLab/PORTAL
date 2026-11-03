@@ -10,7 +10,6 @@
 [![Studio GUI: PySide6](https://img.shields.io/badge/GUI-PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)](#portal-studio)
 [![348 benchmark recipes](https://img.shields.io/badge/recipes-348-E69F00?style=flat-square)](#catalog-and-ready-to-use-suites)
 [![Suites: S50, S20, and 30+30](https://img.shields.io/badge/suites-S50%20%7C%20S20%20%7C%2030%2B30-E69F00?style=flat-square)](#catalog-and-ready-to-use-suites)
-[![Runners: parallel execution and resume](https://img.shields.io/badge/runners-parallel%20%2B%20resume-00897B?style=flat-square)](#construct-a-benchmark-suite)
 [![arXiv Part I: 2512.00288](https://img.shields.io/badge/arXiv%20Part%20I-2512.00288-B31B1B?style=flat-square)](https://arxiv.org/abs/2512.00288)
 
 PORTAL constructs continuous black-box optimization problems from explicit,
