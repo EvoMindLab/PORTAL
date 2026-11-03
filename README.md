@@ -2,6 +2,17 @@
 
 **Platform for Optimization Research, Testing, Analysis, and Learning**
 
+[![Version 2.0.0](https://img.shields.io/badge/version-2.0.0-0078D4?style=flat-square)](https://github.com/EvoMindLab/PORTAL/releases/tag/v2.0.0)
+[![Python 3.11 or newer](https://img.shields.io/badge/python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](#install-and-launch)
+[![Tested on Windows x64](https://img.shields.io/badge/tested-Windows%20x64-0078D4?style=flat-square)](#tested-environment)
+[![Framework license: MIT](https://img.shields.io/badge/framework%20license-MIT-3DA639?style=flat-square)](LICENSING.md)
+
+[![Studio GUI: PySide6](https://img.shields.io/badge/GUI-PySide6-41CD52?style=flat-square&logo=qt&logoColor=white)](#portal-studio)
+[![348 benchmark recipes](https://img.shields.io/badge/recipes-348-E69F00?style=flat-square)](#catalog-and-ready-to-use-suites)
+[![Suites: S50, S20, and 30+30](https://img.shields.io/badge/suites-S50%20%7C%20S20%20%7C%2030%2B30-E69F00?style=flat-square)](#catalog-and-ready-to-use-suites)
+[![Runners: parallel execution and resume](https://img.shields.io/badge/runners-parallel%20%2B%20resume-00897B?style=flat-square)](#construct-a-benchmark-suite)
+[![arXiv Part I: 2512.00288](https://img.shields.io/badge/arXiv%20Part%20I-2512.00288-B31B1B?style=flat-square)](https://arxiv.org/abs/2512.00288)
+
 PORTAL constructs continuous black-box optimization problems from explicit,
 reusable recipes. Its controls cover component geometry, conditioning,
 variable interactions, transformations, multiple basins, and block-wise
@@ -10,7 +21,12 @@ and education, or use the Python interfaces and configurable runners.
 
 Repository: <https://github.com/EvoMindLab/PORTAL>
 
-Current release: **v2.0.0** (November 3, 2026).
+## News
+
+- **November 3, 2026:** Released **v2.0.0**
+  ([release notes](https://github.com/EvoMindLab/PORTAL/releases/tag/v2.0.0)),
+  featuring PORTAL Studio, end-to-end suite-construction and dataset-augmentation
+  runners, and the public recipe catalog and curated benchmark suites.
 
 This release is **Python-only**. The previous MATLAB implementation is no
 longer maintained; the earlier public version remains in the repository's
@@ -260,7 +276,23 @@ The author-derived dd-CMA-ES module is excluded from the public release because
 no explicit source-code license was found. The exclusion does not affect the
 reported experiments or the algorithms available in Studio.
 
-Copyright (c) 2025-present Danial Yazdani, Mai Peng, Delaram Yazdani,
-and PORTAL contributors.
+## Contributions and contacts
 
-Questions: [Danial Yazdani](mailto:danial.yazdani@gmail.com).
+- **PORTAL framework and methodology:** Danial Yazdani led the design of the
+  mathematical framework, generation and realization mechanisms,
+  suite-construction workflow, and JSON schema, with contributions and feedback
+  from coauthors.
+- **PORTAL Studio GUI:** Delaram Yazdani designed the GUI, with refinement
+  through coauthor feedback and testing.
+- **Optimization algorithm implementations:** Delaram Yazdani and Mai Peng
+  implemented or adapted the published optimizers for PORTAL. Original method
+  references and source acknowledgments are retained with the implementations.
+- **Benchmark recipe catalog:** Danial Yazdani and Shima F. Yazdi designed the
+  benchmark recipes.
+
+For GUI questions, contact [Delaram Yazdani](mailto:delaram.yazdani@yahoo.com).
+For all other technical questions, contact
+[Danial Yazdani](mailto:danial.yazdani@gmail.com).
+
+Copyright (c) 2025-present Danial Yazdani, Delaram Yazdani, Mai Peng,
+and PORTAL contributors.
