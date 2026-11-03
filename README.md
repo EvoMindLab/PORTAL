@@ -37,7 +37,7 @@ everything:
 
 | Requirements file | Purpose |
 |---|---|
-| [requirements.txt](requirements.txt) | Standard installation: Studio, generation and evaluation, ELA, built-in optimizer wrappers, and suite construction. |
+| [requirements.txt](requirements.txt) | Standard installation: Studio, generation and evaluation, Exploratory Landscape Analysis (ELA), built-in optimizer wrappers, and suite construction. |
 | [requirements-algorithms.txt](requirements-algorithms.txt) | Optional NiaPy and pymoo libraries for additional optimizer implementations. |
 | [requirements-acceleration.txt](requirements-acceleration.txt) | Optional PyTorch evaluator backend; NumPy evaluation does not require it. |
 | [requirements-dev.txt](requirements-dev.txt) | Standard requirements plus pytest for running the software tests. |
