@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the PORTAL software and the associated public framework preprint."
+title: "PORTAL: Platform for Optimization Research, Testing, Analysis, and Learning"
+type: software
+version: "2.0.0"
+date-released: 2026-11-03
+authors:
+  - given-names: Danial
+    family-names: Yazdani
+  - name: EvoMindLab
+repository-code: "https://github.com/EvoMindLab/PORTAL"
+url: "https://github.com/EvoMindLab/PORTAL"
+license: MIT
+abstract: >-
+  The MIT license applies to PORTAL-owned framework material only. Bundled
+  optimizer implementations and other third-party software retain separate
+  terms, as described in LICENSING.md and THIRD_PARTY_NOTICES.md.
+keywords:
+  - continuous optimization
+  - benchmark generation
+  - benchmark suite construction
+  - exploratory landscape analysis

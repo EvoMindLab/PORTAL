@@ -1,0 +1,40 @@
+# Bounded execution example, not a scientific benchmark-construction protocol.
+[run]
+name = "quick_start"
+recipes_root = "examples/recipes"
+output_root = "suite_runs/quick_start"
+resume = true
+
+[ela]
+sample_factor = 100
+max_workers = 2
+evaluation_device = "numpy"
+
+[performance]
+algorithms = ["DE", "PSO"]
+runs = 1
+max_fe_per_dimension = 200
+checkpoints = [100, 200, 400]
+max_parallel_runs = 2
+checkpoint_every = 2
+evaluation_device = "numpy"
+
+[deduplication]
+primary_tau = 0.005
+sensitivity_thresholds = [0.001, 0.005, 0.01]
+
+[selection]
+size = 4
+families = ["Baseline", "Transformed"]
+family_lower_percent = [50.0, 50.0]
+family_upper_percent = [50.0, 50.0]
+max_swap_passes = 2
+
+[train_test]
+enabled = true
+train_size = 2
+test_size = 2
+train_family_lower_percent = [50.0, 50.0]
+train_family_upper_percent = [50.0, 50.0]
+test_family_lower_percent = [50.0, 50.0]
+test_family_upper_percent = [50.0, 50.0]

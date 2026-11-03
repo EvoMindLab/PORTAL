@@ -1,0 +1,212 @@
+{
+  "Seed": 505,
+  "d": 2,
+  "B": 1,
+  "block_dims": [
+    2
+  ],
+  "bounds_min": -100,
+  "bounds_max": 100,
+  "warn_out_of_bounds": true,
+  "blocks": [
+    {
+      "block_id": 1,
+      "weight": 1.0,
+      "d": 2,
+      "dim_indices_one_based": [
+        1,
+        2
+      ],
+      "baseline": [
+        "A"
+      ],
+      "K": 1,
+      "components": [
+        {
+          "component_id": 1,
+          "transform_seq": [
+            "additive_periodic"
+          ],
+          "form": 1,
+          "neutralize_enable": true,
+          "c": [
+            63.11125816693237,
+            -37.342588220384854
+          ],
+          "beta": 2.2308852664274803,
+          "Delta": 106.68351756738724,
+          "r_ref": 100.0,
+          "kappa_plus": [
+            1.0,
+            2.0
+          ],
+          "kappa_minus": [
+            1.0,
+            2.0
+          ],
+          "p_single": 0.4,
+          "p_plus": [
+            0.4,
+            0.4
+          ],
+          "p_minus": [
+            0.4,
+            0.4
+          ],
+          "rho_plus": [
+            0.8932562674774462,
+            0.8932562674774462
+          ],
+          "rho_minus": [
+            0.8932562674774462,
+            0.8932562674774462
+          ],
+          "rho_single": null,
+          "rotation": {
+            "active": false,
+            "Psi_deg": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "T_additive_periodic": {
+            "mu_plus": [
+              0.10649702131826455,
+              0.14954126794537909
+            ],
+            "mu_minus": [
+              0.6757115485154365,
+              0.5331912361185819
+            ],
+            "gamma_plus": [
+              0.014778290595695496,
+              0.1642432730927259
+            ],
+            "gamma_minus": [
+              0.15535573326526836,
+              0.11594296304024394
+            ],
+            "omega_plus": [
+              0.21568138916712892,
+              0.5947695910707695
+            ],
+            "omega_minus": [
+              0.3727096127495546,
+              0.49002549459007333
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "_suite": {
+    "family": "Transformed",
+    "recipe_id": "demo_05"
+  },
+  "_generation": {
+    "schema_version": 1,
+    "ranges": {
+      "c_min": -90.0,
+      "c_max": 90.0,
+      "beta_min": 0.0,
+      "beta_max": 10.0,
+      "p_min": 0.2,
+      "p_max": 1.2,
+      "kappa_min": 1.0,
+      "kappa_max": 100.0,
+      "theta_min": -180.0,
+      "theta_max": 180.0,
+      "Delta_min": 50.0,
+      "Delta_max": 200.0,
+      "r_ref_min": 100.0,
+      "r_ref_max": 100.0,
+      "AP_mu_min": 0.1,
+      "AP_mu_max": 0.7,
+      "AP_gamma_min": 0.002,
+      "AP_gamma_max": 0.2,
+      "AP_omega_min": 0.05,
+      "AP_omega_max": 1.0,
+      "LS_mu_min": 0.05,
+      "LS_mu_max": 0.5,
+      "LS_omega_min": 5.0,
+      "LS_omega_max": 50.0,
+      "WM_mu_min": 10.0,
+      "WM_mu_max": 50.0,
+      "WM_omega_min": 0.3,
+      "WM_omega_max": 1.0,
+      "WM_eta_min": 10.0,
+      "WM_eta_max": 24.0,
+      "TI_mu0_min": 10.0,
+      "TI_mu0_max": 20.0,
+      "TI_omega_min": 0.1,
+      "TI_omega_max": 0.7,
+      "RP_mu_min": 0.4,
+      "RP_mu_max": 2.0,
+      "RP_p_min": 0.4,
+      "RP_p_max": 0.7,
+      "RP_q_min": 0.4,
+      "RP_q_max": 1.2,
+      "RP_omega_min": 0.1,
+      "RP_omega_max": 10.0
+    },
+    "config": {
+      "Seed": 505,
+      "Dimension": 2,
+      "NumComponents": 1,
+      "BaselineMode": 3,
+      "BaselineProbA": 0.5,
+      "BaselineType": "A",
+      "BaselineSeq": [],
+      "TransformMode": 4,
+      "TransformCountMin": 0,
+      "TransformCountMax": 2,
+      "TransformCount": 1,
+      "RotationMode": 1,
+      "RotationProb": 0.5,
+      "SpecificAngle": 45,
+      "BlockSizes": [],
+      "BlockAngles": [],
+      "CenterMode": 1,
+      "ExclusionZone": [
+        -20,
+        20
+      ],
+      "KappaMode": 4,
+      "BetaAlpha": 0.2,
+      "BetaBeta": 0.2,
+      "PMode": 2,
+      "FixedP": 0.4,
+      "PBetaAlpha": 0.5,
+      "PBetaBeta": 0.5,
+      "BetaOffsetMode": 1,
+      "FixedBeta": 0,
+      "BetaOffsetBetaAlpha": 0.2,
+      "BetaOffsetBetaBeta": 0.2,
+      "BetaGap": 20.0,
+      "BetaOptGap": 1.0,
+      "TransformParamMode": 1,
+      "TransformParamBetaAlpha": 0.2,
+      "TransformParamBetaBeta": 0.2,
+      "DeltaMin": 50.0,
+      "DeltaMax": 200.0,
+      "RRef": 100.0,
+      "LSSigma": 0.1,
+      "EnsureNoCover": true,
+      "NoCoverMaxAttempts": 1000,
+      "NoCoverTolerance": 1e-06
+    },
+    "no_cover": {
+      "enforced": true,
+      "tolerance": 1e-06,
+      "attempts": 1,
+      "rejections": 0,
+      "validated": true
+    }
+  }
+}

@@ -1,0 +1,80 @@
+# PORTAL end-to-end suite construction.
+# Relative paths are resolved from the repository root.
+
+[run]
+name = "portal_s50"
+# May be a flat folder or any nested layout. Folder names are ignored.
+recipes_root = "Suite"
+output_root = "suite_runs/portal_s50"
+resume = true
+
+[ela]
+sample_factor = 1000
+seed = 42
+# Zero selects the stage default (90% of available CPU cores).
+max_workers = 0
+# Progress is reported at this percentage interval; an alive message is
+# emitted after this many seconds without a completed progress unit.
+heartbeat_percent = 0.1
+heartbeat_alive_seconds = 30.0
+evaluation_device = "cpu"
+
+[performance]
+algorithms = [
+  "CMA_ES",
+  "DE",
+  "LSHADE",
+  "PSO",
+  "CLPSO",
+  "PatternSearch",
+  "Powell",
+]
+runs = 11
+max_fe_per_dimension = 10000
+checkpoints = [30000, 50000, 100000, 200000, 300000]
+base_seed = 10000
+# Save the resumable run table after this many completed solver runs.
+checkpoint_every = 25
+# Zero selects the stage default (90% of available CPU cores).
+max_parallel_runs = 0
+heartbeat_percent = 0.1
+heartbeat_alive_seconds = 30.0
+evaluation_device = "cpu"
+resume = true
+
+[features]
+log_epsilon = 1e-10
+iqr_floor = 1e-6
+correlation_threshold = 0.95
+mad_floor = 1e-8
+winsor_lower = 0.01
+winsor_upper = 0.99
+
+[deduplication]
+rule = "and"
+primary_tau = 0.05
+sensitivity_thresholds = [0.03, 0.05, 0.08, 0.10]
+normalization = "p95"
+mis_backend = "cbc"
+
+[selection]
+size = 50
+families = ["Family1", "Family2", "Family3", "Family4"]
+family_lower_percent = [12.0, 16.0, 20.0, 30.0]
+family_upper_percent = [16.0, 24.0, 30.0, 40.0]
+ela_weight = 0.5
+performance_weight = 0.5
+trim_fraction = 0.10
+spacing_lambda = 1.0
+spacing_mu = 0.5
+max_swap_passes = 10
+
+[train_test]
+enabled = false
+train_size = 30
+test_size = 30
+split_seed = 42
+train_family_lower_percent = [12.0, 16.0, 20.0, 30.0]
+train_family_upper_percent = [16.0, 24.0, 30.0, 40.0]
+test_family_lower_percent = [12.0, 16.0, 20.0, 30.0]
+test_family_upper_percent = [16.0, 24.0, 30.0, 40.0]

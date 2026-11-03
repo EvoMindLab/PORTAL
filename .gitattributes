@@ -1,0 +1,16 @@
+# Keep code and documentation portable.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.cff text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+
+# Type 3 uses a source-file fingerprint. Preserve released recipe bytes rather
+# than changing their line endings between Windows and other checkouts.
+*.json -text whitespace=cr-at-eol
+*.pdf -text
+*.png -text

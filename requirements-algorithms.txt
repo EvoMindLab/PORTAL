@@ -1,0 +1,7 @@
+# Optional dependencies for package-backed optimizers.
+#
+# Both have no upper NumPy pin and ship Python 3.14 wheels, so install
+# normally (no --no-deps needed, unlike MEALPY historically):
+#   .\.venv\Scripts\python.exe -m pip install -r requirements-algorithms.txt
+niapy==2.7.1
+pymoo==0.6.2

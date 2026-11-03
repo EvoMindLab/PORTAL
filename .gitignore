@@ -1,79 +1,35 @@
-# LaTeX auxiliary files
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
-*.out
-*.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
-*.bbl
-*.bcf
-*.blg
-*.run.xml
-*.synctex.gz
-*.synctex(busy)
-*.fdb_latexmk
-*.xdv
-*.nav
-*.snm
-*.vrb
-*.dvi
-*.ps
-
-# Intermediate files
-*.tmp
-*.bak
-*.backup
-*.swp
-*.sav
-*.asv
-
-# Build folders
-.vscode/
-_build/
-build/
-output/
-out/
-*.gz
-
-# LaTeX editors and IDEs
-*.acn
-*.acr
-*.alg
-*.glg
-*.glo
-*.gls
-*.ist
-
-# TeXShop specific
-*.texpadtmp
-*.texpadlog
-*.texpadaux
-
-# Mac OS specific
-.DS_Store
-
-# Windows specific
-Thumbs.db
-
-# Claude Code specific
-.claude/
-
-# Python specific
+# Runtime outputs and local settings, never scientific input recipes.
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-env/
+.venv/
 venv/
+.env
+.env.*
 .pytest_cache/
-
-# MATLAB specific
-*.asv
-*.m~
-slprj/
+.coverage*
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+results/
+suite_runs/
+augmentation_runs/
+pipeline_output/
+near_dup_output/
+selection_output/
+train_test_output/
+my_recipes/
+my_demo_recipes/
+portal_core/Instances/
+*.partial.csv
+*.log
+*.tmp
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+Documentation/UserManual-*.png

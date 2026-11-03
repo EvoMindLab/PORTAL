@@ -1,0 +1,29 @@
+SHADE / L-SHADE source credits and licensing evidence
+
+Original method authors: Ryoji Tanabe and Alex Fukunaga.
+Original MATLAB/Octave source packages: Ryoji Tanabe, June 9, 2014,
+with the October 9, 2014 fixes described in the supplied READMEs.
+
+Utility-source credits retained from those packages:
+  updateArchive.m and gnR1R2.m: Written by Jingqiao Zhang
+  boundConstraint.m: Written by Jingqiao Zhang
+
+SHADE source package:
+https://ryojitanabe.github.io/code/SHADE1.1.1_CEC2014_Matlab_Octave.zip
+L-SHADE source package:
+https://ryojitanabe.github.io/code/LSHADE1.0.1_CEC2014_Octave-Matlab.zip
+
+Author repository revision checked:
+9aa07eea380ef3a437b3ba1a9ffdbfc4dac58a64
+License source:
+https://github.com/ryojitanabe/ryojitanabe.github.io/blob/9aa07eea380ef3a437b3ba1a9ffdbfc4dac58a64/LICENSE
+
+The author's hosting repository declares GNU GPL v3 at its root. The exact
+repository license text is retained in Tanabe-GPL-3.0.txt. The checked archives
+contain no separate conflicting license. This records repository-level
+licensing evidence; it does not claim that PORTAL owns the original source.
+
+The PORTAL Python implementations adapt the numerical methods to PORTAL's
+problem interface, bounded domains, and evaluation budgets. They are not
+relicensed under the framework's MIT grant. Preserve the original credits
+and comply with the applicable GPL terms when redistributing these modules.

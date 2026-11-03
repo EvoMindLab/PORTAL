@@ -1,0 +1,64 @@
+# PORTAL Type 3 large-scale dataset augmentation.
+# Relative paths are resolved from the repository root.
+# This workflow creates unified JSON instances only. It does not run ELA,
+# Performance, optimization algorithms, deduplication, or suite selection.
+
+[run]
+name = "s50_type3_dataset"
+# Each entry may be a canonical unified recipe JSON or a folder searched
+# recursively. Directory names are not used for recipe or family identity.
+sources = ["Benchmark_S50"]
+output_root = "augmentation_runs/s50_type3_dataset"
+resume = true
+
+[generation]
+# Number of Type 3 instances generated independently from each source recipe.
+count_per_recipe = 100
+start_sample = 1
+base_seed = 42
+
+# Type 3 center and basin-depth ranges.
+center_min = -80.0
+center_max = 80.0
+beta_min = -1000.0
+beta_max = 1000.0
+beta_gap = 20.0
+beta_opt_gap = 1.0
+
+# The block-local no-cover safeguard is enabled by default. Disable it only
+# when covered component centers are intentionally part of the data design.
+ensure_no_cover = true
+no_cover_max_attempts = 1000
+no_cover_tolerance = 1e-6
+
+# Detailed block trace metadata is optional and increases JSON size.
+trace_metadata = false
+
+[execution]
+# Zero selects floor(cpu_count * cpu_fraction). An explicit positive worker
+# count overrides cpu_fraction but is still capped at the available CPU count.
+max_workers = 0
+cpu_fraction = 0.95
+
+# Each worker loads one source recipe and generates this many sample IDs per
+# submitted task. Larger chunks reduce scheduling overhead; smaller chunks
+# provide finer progress and failure granularity.
+task_chunk_size = 10
+max_in_flight_factor = 2
+
+# Completed task rows are appended immediately. The runner additionally
+# flushes the checkpoint and state after this many new instances.
+checkpoint_every = 25
+heartbeat_percent = 0.5
+heartbeat_alive_seconds = 30.0
+
+[validation]
+# Reload each saved unified JSON and verify structure, ranges, depth gaps,
+# optimum consistency, block weights, and the requested no-cover condition.
+verify_outputs = true
+# Hash completed files before accepting them during resume.
+verify_hashes_on_resume = true
+
+[output]
+# Choices: "by_family_recipe", "by_recipe", or "flat".
+layout = "by_family_recipe"

@@ -1,0 +1,19 @@
+# One Type 3 instance from each structural family, with bounded parallelism.
+[run]
+name = "augmentation_quick_start"
+sources = [
+  "Suite/Family1/d30/f01_r001.json",
+  "Suite/Family2/d30/f02_r001.json",
+  "Suite/Family3/d30/f03_r001.json",
+  "Suite/Family4/d30/f04_r001.json",
+]
+output_root = "augmentation_runs/quick_start"
+resume = true
+
+[generation]
+count_per_recipe = 1
+
+[execution]
+max_workers = 2
+task_chunk_size = 1
+checkpoint_every = 1

@@ -1,0 +1,206 @@
+{
+  "Seed": 507,
+  "d": 2,
+  "B": 1,
+  "block_dims": [
+    2
+  ],
+  "bounds_min": -100,
+  "bounds_max": 100,
+  "warn_out_of_bounds": true,
+  "blocks": [
+    {
+      "block_id": 1,
+      "weight": 1.0,
+      "d": 2,
+      "dim_indices_one_based": [
+        1,
+        2
+      ],
+      "baseline": [
+        "A"
+      ],
+      "K": 1,
+      "components": [
+        {
+          "component_id": 1,
+          "transform_seq": [
+            "wavelet_mod"
+          ],
+          "form": 1,
+          "neutralize_enable": true,
+          "c": [
+            -87.26399240397619,
+            87.99427865398783
+          ],
+          "beta": 6.7440930667499135,
+          "Delta": 106.41176933429446,
+          "r_ref": 100.0,
+          "kappa_plus": [
+            1.0,
+            25.0
+          ],
+          "kappa_minus": [
+            1.0,
+            25.0
+          ],
+          "p_single": 1.0,
+          "p_plus": [
+            1.0,
+            1.0
+          ],
+          "p_minus": [
+            1.0,
+            1.0
+          ],
+          "rho_plus": [
+            0.0004092760359011325,
+            0.0004092760359011325
+          ],
+          "rho_minus": [
+            0.0004092760359011325,
+            0.0004092760359011325
+          ],
+          "rho_single": null,
+          "rotation": {
+            "active": false,
+            "Psi_deg": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "T_wavelet_mod": {
+            "mu_plus": [
+              15.099569807502874,
+              35.23855398271624
+            ],
+            "mu_minus": [
+              21.770440597861956,
+              44.718014621059446
+            ],
+            "omega_plus": [
+              0.4798028704451677,
+              0.4875459986705874
+            ],
+            "omega_minus": [
+              0.7997633396298893,
+              0.8011543617638952
+            ],
+            "eta": 11.352426307548381,
+            "eps": 1e-12
+          }
+        }
+      ]
+    }
+  ],
+  "_suite": {
+    "family": "Transformed",
+    "recipe_id": "demo_07"
+  },
+  "_generation": {
+    "schema_version": 1,
+    "ranges": {
+      "c_min": -90.0,
+      "c_max": 90.0,
+      "beta_min": 0.0,
+      "beta_max": 10.0,
+      "p_min": 0.2,
+      "p_max": 1.2,
+      "kappa_min": 1.0,
+      "kappa_max": 100.0,
+      "theta_min": -180.0,
+      "theta_max": 180.0,
+      "Delta_min": 50.0,
+      "Delta_max": 200.0,
+      "r_ref_min": 100.0,
+      "r_ref_max": 100.0,
+      "AP_mu_min": 0.1,
+      "AP_mu_max": 0.7,
+      "AP_gamma_min": 0.002,
+      "AP_gamma_max": 0.2,
+      "AP_omega_min": 0.05,
+      "AP_omega_max": 1.0,
+      "LS_mu_min": 0.05,
+      "LS_mu_max": 0.5,
+      "LS_omega_min": 5.0,
+      "LS_omega_max": 50.0,
+      "WM_mu_min": 10.0,
+      "WM_mu_max": 50.0,
+      "WM_omega_min": 0.3,
+      "WM_omega_max": 1.0,
+      "WM_eta_min": 10.0,
+      "WM_eta_max": 24.0,
+      "TI_mu0_min": 10.0,
+      "TI_mu0_max": 20.0,
+      "TI_omega_min": 0.1,
+      "TI_omega_max": 0.7,
+      "RP_mu_min": 0.4,
+      "RP_mu_max": 2.0,
+      "RP_p_min": 0.4,
+      "RP_p_max": 0.7,
+      "RP_q_min": 0.4,
+      "RP_q_max": 1.2,
+      "RP_omega_min": 0.1,
+      "RP_omega_max": 10.0
+    },
+    "config": {
+      "Seed": 507,
+      "Dimension": 2,
+      "NumComponents": 1,
+      "BaselineMode": 3,
+      "BaselineProbA": 0.5,
+      "BaselineType": "A",
+      "BaselineSeq": [],
+      "TransformMode": 4,
+      "TransformCountMin": 0,
+      "TransformCountMax": 2,
+      "TransformCount": 1,
+      "RotationMode": 1,
+      "RotationProb": 0.5,
+      "SpecificAngle": 45,
+      "BlockSizes": [],
+      "BlockAngles": [],
+      "CenterMode": 1,
+      "ExclusionZone": [
+        -20,
+        20
+      ],
+      "KappaMode": 4,
+      "BetaAlpha": 0.2,
+      "BetaBeta": 0.2,
+      "PMode": 2,
+      "FixedP": 1.0,
+      "PBetaAlpha": 0.5,
+      "PBetaBeta": 0.5,
+      "BetaOffsetMode": 1,
+      "FixedBeta": 0,
+      "BetaOffsetBetaAlpha": 0.2,
+      "BetaOffsetBetaBeta": 0.2,
+      "BetaGap": 20.0,
+      "BetaOptGap": 1.0,
+      "TransformParamMode": 1,
+      "TransformParamBetaAlpha": 0.2,
+      "TransformParamBetaBeta": 0.2,
+      "DeltaMin": 50.0,
+      "DeltaMax": 200.0,
+      "RRef": 100.0,
+      "LSSigma": 0.1,
+      "EnsureNoCover": true,
+      "NoCoverMaxAttempts": 1000,
+      "NoCoverTolerance": 1e-06
+    },
+    "no_cover": {
+      "enforced": true,
+      "tolerance": 1e-06,
+      "attempts": 1,
+      "rejections": 0,
+      "validated": true
+    }
+  }
+}

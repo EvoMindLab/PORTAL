@@ -1,0 +1,1 @@
+"""Education PORTAL Studio module."""

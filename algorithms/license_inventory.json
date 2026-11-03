@@ -1,0 +1,421 @@
+{
+  "review_date": "2026-11-03",
+  "portal_framework_license": "MIT",
+  "portal_interface_exception": "algorithms/base_algorithm.py follows the root MIT license",
+  "local_optimizer_contribution_license": "GPL-3.0-only",
+  "license_scope_document": "../LICENSING.md",
+  "notice": "The root MIT grant covers PORTAL-owned framework material only. Optimizers keep separate terms. Ten paper-based implementations are documented from maintainer-confirmed development history; reference code was consulted for clarification. The author-derived dd-CMA-ES module is excluded from public export, not relicensed.",
+  "algorithms": [
+    {
+      "path": "algorithms/APSO.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/BBPSO.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/CLPSO.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/P-N-Suganthan/CODES/blob/master/2006-IEEE-TEC-CLPSO.zip",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/CMA-ES.py",
+      "provenance": "installed-package-wrapper",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "BSD-3-Clause (package); public-domain declaration in purecma.py",
+      "source_url": "https://github.com/CMA-ES/pycma",
+      "upstream_license_url": "https://github.com/CMA-ES/pycma/blob/master/LICENSE",
+      "release_clearance": "documented",
+      "review_note": "Numerical core is imported from the installed package, not copied here. Its own license remains applicable."
+    },
+    {
+      "path": "algorithms/CMA_ES.py",
+      "provenance": "installed-package-wrapper",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "BSD-3-Clause (package); public-domain declaration in purecma.py",
+      "source_url": "https://github.com/CMA-ES/pycma",
+      "upstream_license_url": "https://github.com/CMA-ES/pycma/blob/master/LICENSE",
+      "release_clearance": "documented",
+      "review_note": "Numerical core is imported from the installed package, not copied here. Its own license remains applicable."
+    },
+    {
+      "path": "algorithms/CMSA-ES.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/DE.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/EA4eig.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/P-N-Suganthan/2022-SO-BO/blob/main/2022-Full-Download.zip",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/ES.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/FIPS.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/GA.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/GLPSO.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/YuejiaoGong/genetic_learning_PSO/blob/master/glpso.cpp",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/HCLPSO.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/P-N-Suganthan/CODES/blob/master/2015-SWEVO-HCLPSO.zip",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/IMODE.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/P-N-Suganthan/2020-Bound-Constrained-Opt-Benchmark/blob/master/E24365%20Updated%20codes%20(1).rar",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/IPOP-CMA-ES.py",
+      "provenance": "installed-package-wrapper",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "MIT",
+      "source_url": "https://github.com/CyberAgentAILab/cmaes",
+      "upstream_license_url": "https://github.com/CyberAgentAILab/cmaes/blob/main/LICENSE",
+      "release_clearance": "documented",
+      "review_note": "Numerical core is imported from the installed package, not copied here. Its own license remains applicable."
+    },
+    {
+      "path": "algorithms/JADE.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/L-SRTDE.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/LSHADE-RSP.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/VladimirStanovov/LSHADE-RSP/blob/master/main.cpp",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/LSHADE-cnEpSin.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/P-N-Suganthan/CEC2017-BoundContrained/blob/master/Codes-of-Top-Methods-and-results.zip",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/LSHADE.py",
+      "provenance": "source-informed-reimplementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "GPL-3.0 (author repository declaration)",
+      "source_url": "https://github.com/ryojitanabe/ryojitanabe.github.io/blob/9aa07eea380ef3a437b3ba1a9ffdbfc4dac58a64/code/LSHADE1.0.1_CEC2014_Octave-Matlab.zip",
+      "upstream_license_url": "https://github.com/ryojitanabe/ryojitanabe.github.io/blob/9aa07eea380ef3a437b3ba1a9ffdbfc4dac58a64/LICENSE",
+      "release_clearance": "documented",
+      "review_note": "Exact author MATLAB/Octave archive located; the earlier underscore-named URL was inaccurate. Its hosting author repository declares GPL v3, with no conflicting archive-specific terms found. The repository-level license and Tanabe/Fukunaga/Zhang credits are preserved; this is not a new MIT grant or an assertion of paper-only independence.",
+      "license_file": "LICENSES/Tanabe-GPL-3.0.txt",
+      "notice_file": "LICENSES/Tanabe-NOTICE.txt"
+    },
+    {
+      "path": "algorithms/MA-ES.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/MadDE.py",
+      "provenance": "declared-upstream-adaptation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "GPL-3.0",
+      "source_url": "https://github.com/subhodipbiswas/MadDE/blob/main/MadDE/MadDE.m",
+      "upstream_license_url": "https://github.com/subhodipbiswas/MadDE/blob/main/LICENSE",
+      "release_clearance": "documented",
+      "review_note": "Author repository contains the identified MATLAB implementation and an explicit GPL v3 license."
+    },
+    {
+      "path": "algorithms/NES.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/NL-SHADE-RSP.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/P-N-Suganthan/2021-SO-BCO/blob/main/Codes-of-top-methods%20(1).zip",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/PSO.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/PatternSearch.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/Powell.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/QPSO.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/SHADE.py",
+      "provenance": "source-informed-reimplementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "GPL-3.0 (author repository declaration)",
+      "source_url": "https://github.com/ryojitanabe/ryojitanabe.github.io/blob/9aa07eea380ef3a437b3ba1a9ffdbfc4dac58a64/code/SHADE1.1.1_CEC2014_Matlab_Octave.zip",
+      "upstream_license_url": "https://github.com/ryojitanabe/ryojitanabe.github.io/blob/9aa07eea380ef3a437b3ba1a9ffdbfc4dac58a64/LICENSE",
+      "release_clearance": "documented",
+      "review_note": "Exact author MATLAB/Octave archive located; the earlier underscore-named URL was inaccurate. Its hosting author repository declares GPL v3, with no conflicting archive-specific terms found. The repository-level license and Tanabe/Fukunaga/Zhang credits are preserved; this is not a new MIT grant or an assertion of paper-only independence.",
+      "license_file": "LICENSES/Tanabe-GPL-3.0.txt",
+      "notice_file": "LICENSES/Tanabe-NOTICE.txt"
+    },
+    {
+      "path": "algorithms/SLPSO.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/SPSO-2011.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/SaDE.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/P-N-Suganthan/CODES/blob/master/2009-IEEE-TEC-SaDE.zip",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    },
+    {
+      "path": "algorithms/TAPSO.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/jDE.py",
+      "provenance": "paper-or-local-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "No copied upstream source identified in the module's stated provenance",
+      "source_url": null,
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Existing source header records a paper/local implementation, not a direct source translation. Algorithm references are not ownership claims."
+    },
+    {
+      "path": "algorithms/jSO.py",
+      "provenance": "maintainer-confirmed-paper-implementation",
+      "local_contribution_license": "GPL-3.0-only",
+      "upstream_license": "Not applied to the independently authored implementation; reference code consulted for clarification",
+      "source_url": "https://github.com/P-N-Suganthan/CEC2017-BoundContrained/blob/master/Codes-of-Top-Methods-and-results.zip",
+      "upstream_license_url": null,
+      "release_clearance": "documented",
+      "review_note": "Maintainer Danial Yazdani confirmed paper-based implementation, with author reference code consulted for clarification. Scientific and reference-source credits are retained; this is a maintainer statement, not independently verified authorship.",
+      "maintainer_confirmation": {
+        "confirmed_by": "Danial Yazdani",
+        "date": "2026-11-03",
+        "basis": "Development history confirmed by the maintainer in the release review."
+      }
+    }
+  ],
+  "review_method": "Source-header and Git-history review, inspection of exact author archives, comparison of code-specific behavior, and Python AST comparisons for dd-CMA-ES. Headers and generic algorithmic similarities alone are not treated as proof of copying. The ten development-origin questions were subsequently resolved by maintainer Danial Yazdani's confirmation; dd-CMA-ES was explicitly excluded from public export.",
+  "public_release_exclusions": [
+    {
+      "path": "algorithms/dd-CMA-ES.py",
+      "reason": "Maintainer-approved exclusion: no explicit author-source license found."
+    }
+  ]
+}

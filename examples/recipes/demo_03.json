@@ -1,0 +1,184 @@
+{
+  "Seed": 503,
+  "d": 2,
+  "B": 1,
+  "block_dims": [
+    2
+  ],
+  "bounds_min": -100,
+  "bounds_max": 100,
+  "warn_out_of_bounds": true,
+  "blocks": [
+    {
+      "block_id": 1,
+      "weight": 1.0,
+      "d": 2,
+      "dim_indices_one_based": [
+        1,
+        2
+      ],
+      "baseline": [
+        "A"
+      ],
+      "K": 1,
+      "components": [
+        {
+          "component_id": 1,
+          "transform_seq": [],
+          "form": 1,
+          "neutralize_enable": true,
+          "c": [
+            -86.25258759738556,
+            -6.537888626054183
+          ],
+          "beta": 6.034780947083087,
+          "Delta": 148.77852905877023,
+          "r_ref": 100.0,
+          "kappa_plus": [
+            1.0,
+            20.0
+          ],
+          "kappa_minus": [
+            1.0,
+            20.0
+          ],
+          "p_single": 1.0,
+          "p_plus": [
+            1.0,
+            1.0
+          ],
+          "p_minus": [
+            1.0,
+            1.0
+          ],
+          "rho_plus": [
+            0.000708469185994144,
+            0.000708469185994144
+          ],
+          "rho_minus": [
+            0.000708469185994144,
+            0.000708469185994144
+          ],
+          "rho_single": null,
+          "rotation": {
+            "active": false,
+            "Psi_deg": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "_suite": {
+    "family": "Baseline",
+    "recipe_id": "demo_03"
+  },
+  "_generation": {
+    "schema_version": 1,
+    "ranges": {
+      "c_min": -90.0,
+      "c_max": 90.0,
+      "beta_min": 0.0,
+      "beta_max": 10.0,
+      "p_min": 0.2,
+      "p_max": 1.2,
+      "kappa_min": 1.0,
+      "kappa_max": 100.0,
+      "theta_min": -180.0,
+      "theta_max": 180.0,
+      "Delta_min": 50.0,
+      "Delta_max": 200.0,
+      "r_ref_min": 100.0,
+      "r_ref_max": 100.0,
+      "AP_mu_min": 0.1,
+      "AP_mu_max": 0.7,
+      "AP_gamma_min": 0.002,
+      "AP_gamma_max": 0.2,
+      "AP_omega_min": 0.05,
+      "AP_omega_max": 1.0,
+      "LS_mu_min": 0.05,
+      "LS_mu_max": 0.5,
+      "LS_omega_min": 5.0,
+      "LS_omega_max": 50.0,
+      "WM_mu_min": 10.0,
+      "WM_mu_max": 50.0,
+      "WM_omega_min": 0.3,
+      "WM_omega_max": 1.0,
+      "WM_eta_min": 10.0,
+      "WM_eta_max": 24.0,
+      "TI_mu0_min": 10.0,
+      "TI_mu0_max": 20.0,
+      "TI_omega_min": 0.1,
+      "TI_omega_max": 0.7,
+      "RP_mu_min": 0.4,
+      "RP_mu_max": 2.0,
+      "RP_p_min": 0.4,
+      "RP_p_max": 0.7,
+      "RP_q_min": 0.4,
+      "RP_q_max": 1.2,
+      "RP_omega_min": 0.1,
+      "RP_omega_max": 10.0
+    },
+    "config": {
+      "Seed": 503,
+      "Dimension": 2,
+      "NumComponents": 1,
+      "BaselineMode": 3,
+      "BaselineProbA": 0.5,
+      "BaselineType": "A",
+      "BaselineSeq": [],
+      "TransformMode": 3,
+      "TransformCountMin": 0,
+      "TransformCountMax": 2,
+      "TransformCount": 1,
+      "RotationMode": 1,
+      "RotationProb": 0.5,
+      "SpecificAngle": 45,
+      "BlockSizes": [],
+      "BlockAngles": [],
+      "CenterMode": 1,
+      "ExclusionZone": [
+        -20,
+        20
+      ],
+      "KappaMode": 4,
+      "BetaAlpha": 0.2,
+      "BetaBeta": 0.2,
+      "PMode": 2,
+      "FixedP": 1.0,
+      "PBetaAlpha": 0.5,
+      "PBetaBeta": 0.5,
+      "BetaOffsetMode": 1,
+      "FixedBeta": 0,
+      "BetaOffsetBetaAlpha": 0.2,
+      "BetaOffsetBetaBeta": 0.2,
+      "BetaGap": 20.0,
+      "BetaOptGap": 1.0,
+      "TransformParamMode": 1,
+      "TransformParamBetaAlpha": 0.2,
+      "TransformParamBetaBeta": 0.2,
+      "DeltaMin": 50.0,
+      "DeltaMax": 200.0,
+      "RRef": 100.0,
+      "LSSigma": 0.1,
+      "EnsureNoCover": true,
+      "NoCoverMaxAttempts": 1000,
+      "NoCoverTolerance": 1e-06
+    },
+    "no_cover": {
+      "enforced": true,
+      "tolerance": 1e-06,
+      "attempts": 1,
+      "rejections": 0,
+      "validated": true
+    }
+  }
+}
