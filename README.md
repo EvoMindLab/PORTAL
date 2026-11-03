@@ -260,7 +260,7 @@ than their entire algorithm catalogs. The pymoo integration is single-objective.
 The expandable lists use Studio's selector labels. `NIAPY` and `PYMOO`
 prefixes distinguish entries when their names would otherwise overlap.
 
-<details>
+<details open>
 <summary>PORTAL implementations and wrappers: 35 entries</summary>
 
 - **Evolution strategies:** `CMA-ES`, `CMSA-ES`, `ES`, `IPOP-CMA-ES`, `MA-ES`,
@@ -275,7 +275,7 @@ prefixes distinguish entries when their names would otherwise overlap.
 
 </details>
 
-<details>
+<details open>
 <summary>Supported NiaPy algorithms: 37 entries</summary>
 
 MTS denotes Multiple Trajectory Search. Dynamic-population variants adjust
@@ -323,7 +323,7 @@ the population size; the `v1` suffix identifies NiaPy's corresponding MTS varian
 
 </details>
 
-<details>
+<details open>
 <summary>Supported pymoo algorithms: 5 entries</summary>
 
 | Selector label | Algorithm |
