@@ -31,6 +31,21 @@ Repository: <https://github.com/EvoMindLab/PORTAL>
 
 Python **3.11 or newer** is required.
 
+Only `requirements.txt` is needed for normal use. The other files separate
+optional additions and development tools so users do not need to install
+everything:
+
+| Requirements file | Purpose |
+|---|---|
+| [requirements.txt](requirements.txt) | Standard installation: Studio, generation and evaluation, ELA, built-in optimizer wrappers, and suite construction. |
+| [requirements-algorithms.txt](requirements-algorithms.txt) | Optional NiaPy and pymoo libraries for additional optimizer implementations. |
+| [requirements-acceleration.txt](requirements-acceleration.txt) | Optional PyTorch evaluator backend; NumPy evaluation does not require it. |
+| [requirements-dev.txt](requirements-dev.txt) | Standard requirements plus pytest for running the software tests. |
+
+Install optional additions after the standard requirements.
+`requirements-dev.txt` already includes `requirements.txt`, but does not
+automatically install either optional addition.
+
 ```bash
 git clone https://github.com/EvoMindLab/PORTAL.git
 cd PORTAL
@@ -221,6 +236,109 @@ Its full example requests 5,000 JSONs and up to 95% of available CPU cores.
 
 See the [augmentation reference](Recipe_Selection/augmentation_pipeline/README.md)
 for all controls, the block-local exposure safeguard, and resumable execution.
+
+## Available optimization algorithms
+
+PORTAL Studio exposes three algorithm sources. The lists below reflect the
+v2.0.0 registry with the pinned optional packages installed. Counts refer to
+registered implementations, not distinct optimization methods: different
+sources can provide versions of the same method.
+
+| Source | Registered entries | Installation |
+|---|---:|---|
+| PORTAL implementations and wrappers | 35 | Included in `requirements.txt`. |
+| [NiaPy](https://github.com/NiaOrg/NiaPy) 2.7.1 | 37 | Optional; install `requirements-algorithms.txt`. |
+| [pymoo](https://pymoo.org/) 0.6.2 | 5 | Optional; install `requirements-algorithms.txt`. |
+
+The standard CMA-ES wrapper uses [pycma](https://github.com/CMA-ES/pycma)
+(`cma` 4.4.4), and IPOP-CMA-ES uses
+[cmaes](https://github.com/CyberAgentAILab/cmaes) 0.13.1. Both libraries are
+included in the standard requirements. NiaPy and pymoo are separately
+installed dependencies; PORTAL exposes the supported subsets below rather
+than their entire algorithm catalogs. The pymoo integration is single-objective.
+
+The expandable lists use Studio's selector labels. `NIAPY` and `PYMOO`
+prefixes distinguish entries when their names would otherwise overlap.
+
+<details>
+<summary>PORTAL implementations and wrappers: 35 entries</summary>
+
+- **Evolution strategies:** `CMA-ES`, `CMSA-ES`, `ES`, `IPOP-CMA-ES`, `MA-ES`,
+  `NES`.
+- **Differential evolution:** `DE`, `IMODE`, `JADE`, `jDE`, `jSO`, `L-SRTDE`,
+  `LSHADE`, `LSHADE-cnEpSin`, `LSHADE-RSP`, `MadDE`, `NL-SHADE-RSP`, `SaDE`,
+  `SHADE`.
+- **Particle swarm methods:** `APSO`, `BBPSO`, `CLPSO`, `FIPS`, `GLPSO`,
+  `HCLPSO`, `PSO`, `QPSO`, `SLPSO`, `SPSO`, `TAPSO`.
+- **Genetic and ensemble methods:** `GA`, `EA4eig`.
+- **Direct search and baseline:** `PatternSearch`, `Powell`, `Random Search`.
+
+</details>
+
+<details>
+<summary>Supported NiaPy algorithms: 37 entries</summary>
+
+MTS denotes Multiple Trajectory Search. Dynamic-population variants adjust
+the population size; the `v1` suffix identifies NiaPy's corresponding MTS variant.
+
+| Selector label | Algorithm |
+|---|---|
+| `ANDE` | Differential Evolution with aging individuals |
+| `CPSO` | Center Particle Swarm Optimization |
+| `DEMTS` | Differential Evolution with MTS |
+| `DEMTS1` | Differential Evolution with MTS v1 |
+| `DNDE` | Differential Evolution with dynamic population size |
+| `DNDEMTS` | Differential Evolution with dynamic population size and MTS |
+| `DNDEMTS1` | Differential Evolution with dynamic population size and MTS v1 |
+| `DNMSDE` | Multi-strategy Differential Evolution with dynamic population size |
+| `DNMSDEMTS` | Multi-strategy Differential Evolution with dynamic population size and MTS |
+| `DNMSDEMTS1` | Multi-strategy Differential Evolution with dynamic population size and MTS v1 |
+| `ES(1+1)` | (1 + 1) Evolution Strategy |
+| `ES(mu+1)` | (mu + 1) Evolution Strategy |
+| `ES(mu+lambda)` | (mu + lambda) Evolution Strategy |
+| `ES(mu,lambda)` | (mu, lambda) Evolution Strategy |
+| `HCA` | Hill Climbing Algorithm |
+| `ILSHADE` | Improved L-SHADE |
+| `MCPSO` | Mutated Center Particle Swarm Optimization |
+| `MCUPSO` | Mutated Center Unified Particle Swarm Optimization |
+| `MPSO` | Mutated Particle Swarm Optimization |
+| `MSDE` | Multi-strategy Differential Evolution |
+| `MSDEMTS` | Multi-strategy Differential Evolution with MTS |
+| `MSDEMTS1` | Multi-strategy Differential Evolution with MTS v1 |
+| `MSSADE` | Multi-strategy Self-adaptive Differential Evolution |
+| `MTS` | Multiple Trajectory Search |
+| `MTSV1` | Multiple Trajectory Search v1 |
+| `NIAPY CLPSO` | Comprehensive Learning Particle Swarm Optimizer |
+| `NIAPY DE` | Differential Evolution |
+| `NIAPY GA` | Genetic Algorithm |
+| `NIAPY LSHADE` | L-SHADE |
+| `NIAPY PSO` | Particle Swarm Optimization |
+| `NIAPY SHADE` | SHADE |
+| `NMM` | Nelder-Mead Method |
+| `OVCPSO` | Opposition-based Particle Swarm Optimization with Velocity Clamping |
+| `PSA` | Particle Swarm Algorithm |
+| `RS` | Random Search |
+| `SA` | Simulated Annealing |
+| `SADE` | Self-adaptive Differential Evolution |
+
+</details>
+
+<details>
+<summary>Supported pymoo algorithms: 5 entries</summary>
+
+| Selector label | Algorithm |
+|---|---|
+| `PYMOO CMA-ES` | Covariance Matrix Adaptation Evolution Strategy |
+| `PYMOO DE` | Differential Evolution |
+| `PYMOO ES` | Evolution Strategy |
+| `PYMOO GA` | Genetic Algorithm |
+| `PYMOO PSO` | Particle Swarm Optimization |
+
+</details>
+
+Original method references and source credits remain in the implementation
+headers. See the [algorithm notes](algorithms/README.md) for provenance and
+separate implementation license terms.
 
 ## Add an optimizer
 
