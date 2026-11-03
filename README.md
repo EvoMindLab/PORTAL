@@ -27,11 +27,6 @@ Repository: <https://github.com/EvoMindLab/PORTAL>
   featuring PORTAL Studio, end-to-end suite-construction and dataset-augmentation
   runners, and the public recipe catalog and curated benchmark suites.
 
-This release is **Python-only**. The previous MATLAB implementation is no
-longer maintained; the earlier public version remains in the repository's
-history. Persistent single- and multi-block recipes use the same unified
-JSON schema.
-
 ## Install and launch
 
 Python **3.11 or newer** is required.
